@@ -1,13 +1,10 @@
 <script src = "script.js">
-    let age =window.prompt('Enter age: ');
-    let age =window.confirm('Are you sure ur ${age} years old?');
-    let maxAge =window.prompt('Enter maximum age: ');
-    let maxAge =window.confirm('Are you sure you'll live until ${maxAge} years old?');       
-    let numPerDay =window.prompt('Enter number per day: ');
-    let age =window.confirm('Are you sure you can have ${numPerDay}?');
     let age = 14;
     let maxAge = 110;
-    let numPerDay = 3
+    let numPerDay = 3;
+    let age =window.confirm('Are you sure ur ${age} years old?');
+    let maxAge =window.confirm('Are you sure you'll live until ${maxAge} years old?');       
+    let numPerDay =window.confirm('Are you sure you can have ${numPerDay}?');
     let totalRequired = (numPerDay * 365) * (maxAge - age);
 
     if(totalRequired) {
