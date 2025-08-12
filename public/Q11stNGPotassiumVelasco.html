@@ -1,9 +1,20 @@
 <script>
-    var age = 14;;
-    var maxAge = 110;
-    var numPerDay = 3;
-    totalRequired = (numPerDay * 365) * (maxAge - age);
+    let age =window.prompt("Enter age:");
+    let maxAge=window.prompt("Enter maximum age:");
+    let numPerDay=window.prompt("Enter number per day:");          
+    //var age = 14;
+    //var maxAge = 110;
+    //let numPerDay = 3
+    let totalRequired = (numPerDay * 365) * (maxAge - age);
+
+    if(totalRequired) {
+        console.log("i forgot");
+    }
+    else {
+        console.log("uhhhhh");
+    }
     document.write("<p class = 'text'><b>You will need " + totalRequired + " slices of pizza to last until the ripe old age of " + maxAge + " years :3</b></p>");
+
 </script>
 <style>
     body {
