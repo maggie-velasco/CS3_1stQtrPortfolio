@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+        <script>
+            <label for = "age">Enter your age:</label>;
+            <input type="age" id="age" age="maxAge">;
+
+            <label for = "maxAge">Enter your maximum age:</label>;
+            <input type="maxAge" id="amaxAge" maxAge="maxAge">;
+            <label for = "numPerDay">Enter number of snacks:</label>;
+            <input type="numPerDay" id="numPerDay" numPerDay="numPerDay">;
+
+            //var age = 14;
+            //var maxAge = 110;
+            //let numPerDay = 3
+            let totalRequired = (numPerDay * 365) * (maxAge - age);
+        
+            if(totalRequired) {
+                console.log("i forgot");
+            }
+            else {
+                console.log("uhhhhh");
+            }
+            document.write("<p class = 'text'><b>You will need " + totalRequired + " slices of pizza to last until the ripe old age of " + maxAge + " years :3</b></p>");
+        
+        </script>
+        <style>
+            body {
+                background-image: url('https://i.pinimg.com/736x/f6/22/4a/f6224ad2d22ed7f9944c9c0a298eadcc.jpg');
+                background-size:100% 100%;
+                background-attachment:fixed;
+                background repeat:no-repeat; 
+            }
+            .text {
+                font-family: 'Courier New';
+                font-size: 30px;
+                color: white;
+                text-align: center;
+            }
+        </style>
+
+
+
+
+    </html>
