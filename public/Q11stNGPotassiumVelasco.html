@@ -1,19 +1,22 @@
-<script>
-    let age =window.prompt("Enter age:");
-    let maxAge=window.prompt("Enter maximum age:");
-    let numPerDay=window.prompt("Enter number per day:");          
-    //var age = 14;
-    //var maxAge = 110;
-    //let numPerDay = 3
+<script src = "script.js">
+    let age =window.prompt('Enter age: ');
+    let age =window.confirm('Are you sure ur ${age} years old?');
+    let maxAge =window.prompt('Enter maximum age: ');
+    let maxAge =window.confirm('Are you sure you'll live until ${maxAge} years old?');       
+    let numPerDay =window.prompt('Enter number per day: ');
+    let age =window.confirm('Are you sure you can have ${numPerDay}?');
+    let age = 14;
+    let maxAge = 110;
+    let numPerDay = 3
     let totalRequired = (numPerDay * 365) * (maxAge - age);
 
     if(totalRequired) {
-        console.log("i forgot");
+        console.log("You will need " + totalRequired + " slices of pizza to last until the ripe old age of " + maxAge + " years :3");
     }
     else {
-        console.log("uhhhhh");
+        console.log("Run the code again");
     }
-    document.write("<p class = 'text'><b>You will need " + totalRequired + " slices of pizza to last until the ripe old age of " + maxAge + " years :3</b></p>");
+    //document.write("<p class = 'text'><b>You will need " + totalRequired + " slices of pizza to last until the ripe old age of " + maxAge + " years :3</b></p>");
 
 </script>
 <style>
