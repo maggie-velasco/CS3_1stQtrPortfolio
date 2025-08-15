@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+      <div>
+      <p>Meal Price:
+      </br>
+      <input id = "meal">
+      </p>
+      <p>Tip:
+      </br>
+      <input id = "tip">
+      </p>
+      <p>Service Change:
+      </br>
+      <input id = "change">
+      </p>
+      <button id = "inputs">Accept inputs</button>
+      </p>
+        <script>
+          var meal = document.getElementById("meal");
+          var tip = document.getElementById("tip");
+          var change = document.getElementById("change");
+          var total;
+
+          function totalMeal() {
+            total = meal + tip + (%change/100*meal);
+            document.write("The total cost of the meal is " + total + "pesos");
+          }
+        </script>
+
+
+
+
+    </body>
+    </html>
