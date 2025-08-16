@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
     <body>
-      <h2>Second Graded Exercise submitted by <i>Jasmine Margarette Velasco</h2></i> of <i>9-Potassium</i></h2>
+      <h2>Second Graded Exercise submitted by <i>Jasmine Margarette Velasco</h2></i> of 9-Potassium</h2>
       <div>
           <div>Meal Price:
               <br />
@@ -24,11 +24,12 @@
             const meal = document.getElementById("meal");
             const tip = document.getElementById("tip");
             const change = document.getElementById("change");
-            const submit = document.getelementById("input");           
+            const submit = document.getElementById("input");           
             }  
             
-            function totalMeal() {
-            var total = meal + tip + (%change/100*meal);
+            function totalMeal(meal,tip,change) {
+            const total = meal + tip + (%change/100*meal);
+            return total;121
             }
             document.getElementById("display");          
         </script>
