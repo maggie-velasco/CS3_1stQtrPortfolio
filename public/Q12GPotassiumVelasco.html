@@ -21,9 +21,9 @@
         
         <script>
             function accept() {
-            const meal = document.getElementById("meal").value;
-            const tip = document.getElementById("tip").value;
-            const change = document.getElementById("change").value;           
+            const meal = parseFloat(document.getElementById("meal").value);
+            const tip = parseFloat(document.getElementById("tip").value);
+            const change = parseFloat(document.getElementById("change").value);           
             const total = totalMeal(meal,tip,change);
             document.getElementById("display").innerText = "Total Cost: " + total;
             }  
