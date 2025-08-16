@@ -25,7 +25,7 @@
             const tip = parseFloat(document.getElementById("tip").value);
             const change = parseFloat(document.getElementById("change").value);           
             const total = totalMeal(meal,tip,change);
-            document.getElementById("display").innerText = "Total Cost: " + total;
+            document.getElementById("display").innerText = "Total Cost: " + total.toFixed(2);
             }  
             
             function totalMeal(meal, tip, change) {
@@ -36,16 +36,18 @@
 
         <footer>
             <p>References:</p>
-            <p>W3schools (2025, August 16). <i>HTML DOM element innerText.</i><br>
+            <p>W3schools (n.d.). <i>HTML DOM element innerText.</i><br>
             <a href = "https://www.w3schools.com/Jsref/prop_node_innertext.asp">https://www.w3schools.com/Jsref/prop_node_innertext.asp</a></p>
-            <p>W3schools (2025, August 16). <i>HTML footer tag.</i><br>
+            <p>W3schools (n.d.). <i>HTML footer tag.</i><br>
             <a href = "https://www.w3schools.com/tags/tag_footer.asp">https://www.w3schools.com/tags/tag_footer.asp</a></p>
-            <p>W3schools (2025, August 16). <i>HTML input types.</i><br>
+            <p>W3schools (n.d.). <i>HTML input types.</i><br>
             <a href = "https://www.w3schools.com/html/html_form_input_types.asp">https://www.w3schools.com/html/html_form_input_types.asp</a></p>
-            <p>W3schools (2025, August 16). <i>HTML onclick Event Attribute.</i><br>
+            <p>W3schools (n.d.). <i>HTML onclick Event Attribute.</i><br>
             <a href = "https://www.w3schools.com/tags/ev_onclick.asp">https://www.w3schools.com/tags/ev_onclick.asp</a></p>
-            <p>W3schools (2025, August 16). <i>Input text value property.</i><br>
+            <p>W3schools (n.d.). <i>Input text value property.</i><br>
             <a href = "https://www.w3schools.com/jsref/prop_text_value.asp">https://www.w3schools.com/jsref/prop_text_value.asp</a></p>
+            <p>TutorialsPoint (n.d.). <i>JavaScript number toFixed() Method.</i><br>
+            <a href = "https://www.tutorialspoint.com/javascript/number_tofixed.htm">https://www.tutorialspoint.com/javascript/number_tofixed.htm</a></p>
         </footer>
     </body>
     </html>
