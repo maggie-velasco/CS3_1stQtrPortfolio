@@ -5,15 +5,15 @@
       <div>
           <div>Meal Price:
               <br />
-              <input id = "meal">
+              <input id = "meal" type = "number">
           </div>
           <div>Tip:
               <br />
-              <input id = "tip">
+              <input id = "tip" type = "number">
           </div>
           <div>Service Change:
               <br />
-              <input id = "change">
+              <input id = "change" type = "number">
           </div>
           <button onclick = "accept()">Accept inputs</button>
       </div>
@@ -21,10 +21,10 @@
         
         <script>
             function accept() {
-            const meal = document.getElementById("meal");
-            const tip = document.getElementById("tip");
-            const change = document.getElementById("change");
-            const submit = document.getElementById("input");           
+            const meal = document.getElementById("meal").value;
+            const tip = document.getElementById("tip").value;
+            const change = document.getElementById("change").value;
+            const submit = document.getElementById("input").value;           
             }  
             
             function totalMeal(meal, tip, change) {
@@ -35,10 +35,15 @@
         </script>
 
         <footer>
+            <p>References:</p>
             <p>W3schools (2025, August 16). <i>HTML footer tag.</i><br>
             <a href = "https://www.w3schools.com/tags/tag_footer.asp">https://www.w3schools.com/tags/tag_footer.asp</a></p>
+            <p>W3schools (2025, August 16). <i>HTML input types.</i><br>
+            <a href = "https://www.w3schools.com/html/html_form_input_types.asp">https://www.w3schools.com/html/html_form_input_types.asp</a></p>
             <p>W3schools (2025, August 16). <i>HTML onclick Event Attribute.</i><br>
-            <a href = "https://www.w3schools.com/tags/ev_onclick.asp">https://www.w3schools.com/tags/tag_footer.asp</a></p>
+            <a href = "https://www.w3schools.com/tags/ev_onclick.asp">https://www.w3schools.com/tags/ev_onclick.asp</a></p>
+            <p>W3schools (2025, August 16). <i>Input text value properly.</i><br>
+            <a href = "https://www.w3schools.com/jsref/prop_text_value.asp">https://www.w3schools.com/jsref/prop_text_value.asp</a></p>
         </footer>
     </body>
     </html>
