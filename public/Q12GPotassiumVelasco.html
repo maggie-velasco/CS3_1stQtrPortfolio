@@ -15,22 +15,23 @@
               <br />
               <input id = "change">
           </div>
-          <button id = "input">Accept inputs</button>          
+          //<button id = "input">Accept inputs</button>
+          button onclick = "accept()">Accept inputs</button>
       </div>
-        <p>Total Cost: </p>
+        <p id = "display"></p>
         
         <script>
+            function accept() {
             const meal = document.getElementById("meal");
             const tip = documemnt.getElementById("tip");
             const change = documemnt.getElementById("change");
-            const submit = document.getelementById("input");
+            const submit = document.getelementById("input");           
+            }  
             
             function totalMeal() {
             var total = meal + tip + (%change/100*meal);
             }
-            function displayTotal() {           
-            console.log(total);
-            }           
+            document.getElementById("display");          
         </script>
     </body>
     </html>
