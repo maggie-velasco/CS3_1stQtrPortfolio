@@ -23,19 +23,20 @@
             function accept() {
             const meal = document.getElementById("meal").value;
             const tip = document.getElementById("tip").value;
-            const change = document.getElementById("change").value;
-            const submit = document.getElementById("input").value;           
+            const change = document.getElementById("change").value;           
+            const total = totalMeal(meal,tip,change);
+            document.getElementById("display").innerText = "Total Cost: " + total;
             }  
             
             function totalMeal(meal, tip, change) {
-            const total = meal + tip + (change/100*meal);
-            alert(total);
-            }
-            document.getElementById("display");          
+            return total = meal + tip + (change/100*meal);          
+            }                      
         </script>
 
         <footer>
             <p>References:</p>
+            <p>W3schools (2025, August 16). <i>HTML DOM element innerText.</i><br>
+            <a href = "https://www.w3schools.com/Jsref/prop_node_innertext.asp">https://www.w3schools.com/Jsref/prop_node_innertext.asp</a></p>
             <p>W3schools (2025, August 16). <i>HTML footer tag.</i><br>
             <a href = "https://www.w3schools.com/tags/tag_footer.asp">https://www.w3schools.com/tags/tag_footer.asp</a></p>
             <p>W3schools (2025, August 16). <i>HTML input types.</i><br>
