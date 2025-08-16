@@ -1,38 +1,36 @@
 <!DOCTYPE html>
     <html>
     <body>
+      <h2>Second Graded Exercise submitted by Jasmine Margarette Velasco of 9-Potassium</h2>
       <div>
           <div>Meal Price:
-          <br />
-          <input id = "meal">
+              <br />
+              <input id = "meal">
           </div>
           <div>Tip:
-          <br />
-          <input id = "tip">
+              <br />
+              <input id = "tip">
           </div>
           <div>Service Change:
-          <br />
-          <input id = "change">
+              <br />
+              <input id = "change">
           </div>
-          <button id = "input">Accept inputs</button>
+          <button id = "input">Accept inputs</button>          
       </div>
-        <script type = "text/javascript">
-          var meal = document.getElementById("meal");
-          var tip = document.getElementById("tip");
-          var change = document.getElementById("change");
-          var submit = document.getElementById("input")
-          var total;
-
-          function totalMeal() {
-            total = meal + tip + (%change/100*meal);
-          }
-          function displayTotal() {
-            document.write("The total cost of the meal is " + total + "pesos");
-          }
+        <p>Total Cost: </p>
+        
+        <script>
+            const meal = document.getElementById("meal");
+            const tip = documemnt.getElementById("tip");
+            const change = documemnt.getElementById("change");
+            const submit = document.getelementById("input");
+            
+            function totalMeal() {
+            var total = meal + tip + (%change/100*meal);
+            }
+            function displayTotal() {           
+            console.log(total);
+            }           
         </script>
-
-
-
-
     </body>
     </html>
