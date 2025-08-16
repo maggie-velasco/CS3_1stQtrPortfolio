@@ -17,7 +17,7 @@
           </div>
           <button onclick = "accept()">Accept inputs</button>
       </div>
-        <p id = "totalMeal()">Total Cost: </p>
+        <p id = "display">Total Cost: </p>
         
         <script>
             function accept() {
@@ -29,7 +29,7 @@
             
             function totalMeal(meal, tip, change) {
             const total = meal + tip + (change/100*meal);
-            return total;
+            alert(total);
             }
             document.getElementById("display");          
         </script>
@@ -42,7 +42,7 @@
             <a href = "https://www.w3schools.com/html/html_form_input_types.asp">https://www.w3schools.com/html/html_form_input_types.asp</a></p>
             <p>W3schools (2025, August 16). <i>HTML onclick Event Attribute.</i><br>
             <a href = "https://www.w3schools.com/tags/ev_onclick.asp">https://www.w3schools.com/tags/ev_onclick.asp</a></p>
-            <p>W3schools (2025, August 16). <i>Input text value properly.</i><br>
+            <p>W3schools (2025, August 16). <i>Input text value property.</i><br>
             <a href = "https://www.w3schools.com/jsref/prop_text_value.asp">https://www.w3schools.com/jsref/prop_text_value.asp</a></p>
         </footer>
     </body>
