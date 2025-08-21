@@ -6,26 +6,28 @@
   <p>Guess the number: ****</p>
   <p>The number is from 1-100</p>
 
-  <div>Enter your guess:< br/>
+  <div>Enter your guess:
     <input id = "num" type = "number">
+    <br />
+    <button onclick = "checkIt()">CHECK IT!!</button>
   </div>
-  <button onclick = "checkIt()">Click me</button>
   <p id = "check"></p>
 
     <script>
-       var dNumber = Math.floor(Math.random() * 100) + 1; // generates a number from 1  to 100 when the page loads
+       var dNumber = Math.floor(Math.random() * 100) + 1;
         function checkIt() {
           var output;
-          if(num < dNumber) {
-            output = "Higher";
+          var num = parseInt(document.getElementById("num").value);
+          if(num == dNumber) {
+            output = "Yaay you got it!!";
           }
           else if(num > dNumber) {
-            output = "Lower";
+            output = "Your guess is higher";
           }
           else {
-            output = "yay you got it!";
+            output = "Your guess is lower";
           }
-          document.write("check").innerHTML = output;
+          document.getElementById("check").innerHTML = output;
         }
     </script>
 
