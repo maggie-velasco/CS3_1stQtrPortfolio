@@ -16,6 +16,8 @@ header {
 section {
   padding: 1.5em;
   font-family: "Courier New", monospace;
+  font-size: 30px;
+  color: #FFFFFF;
 }
 footer {
   text-align: center;
