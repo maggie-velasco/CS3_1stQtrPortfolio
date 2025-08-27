@@ -7,15 +7,15 @@ body {
   background-repeat:no-repeat;
 }
 header {
-  background-color: #D7B7EB;
-  color: mintcream;
+  background-color: #E0FFFF;
+  color: #FFFFFF;
   padding: 2em;
   text-align: center;
-  font-family: cursive;
+  font-family: "Brush Script MT", cursive;
 }
 section {
   padding: 1.5em;
-  font-family: 'Courier New';
+  font-family: "Courier New", monospace;
 }
 footer {
   text-align: center;
