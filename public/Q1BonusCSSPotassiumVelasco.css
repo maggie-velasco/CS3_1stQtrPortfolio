@@ -2,13 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR3PKS9l4OSzC4nshtIzMmzCTaBBcTKsHSiQ&s');
+  background-image: url('https://i.pinimg.com/736x/02/76/97/02769765e29ca0d18a6651d90f8f7aee.jpg');
   background-size:100% 100%;
   background-attachment:fixed;
   background-repeat:no-repeat;
 }
 header {
-  background-color: #E1B3F2;
+  background-color: E1B3F2;
   color: white;
   padding: 2em;
   text-align: center;
