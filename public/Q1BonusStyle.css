@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://wallpaperbat.com/img/81205507-anime-scenery-4k-light-wallpaper.jpg');
+  background-image: url('https://marketplace.canva.com/EAGKYZUC4_Q/1/0/1600w/canva-brown-and-cream-manhwa-anime-study-desk-organizer-desktop-wallpaper-5W6BbMBb-2g.jpg');
   background-size:100% 100%;
   background-attachment:fixed;
   background-repeat:no-repeat;
 }
 header {
-  background-color: #DDA0DD;
-  color: #FFFFFF;
+  background-color: beige;
+  color: black;
   padding: 2em;
   text-align: center;
   font-family: "Brush Script MT", cursive;
@@ -16,8 +16,14 @@ header {
 section {
   padding: 1.5em;
   font-family: "Courier New", monospace;
-  font-size: 30px;
-  color: #FFFFFF;
+  font-size: 20px;
+  color: black;
+}
+h1 {
+    font-size: 4ch;
+}
+p {
+    font-size: 20px;
 }
 footer {
   text-align: center;
