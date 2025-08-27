@@ -1,5 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-image: url('https://i.pinimg.com/736x/02/76/97/02769765e29ca0d18a6651d90f8f7aee.jpg');
@@ -8,15 +7,15 @@ body {
   background-repeat:no-repeat;
 }
 header {
-  background-color: blue;
-  color: white;
+  background-color: #D7B7EB;
+  color: mintcream;
   padding: 2em;
   text-align: center;
-  font-family: Cursive;
+  font-family: cursive;
 }
 section {
   padding: 1.5em;
-  font-family: Courier;
+  font-family: 'Courier New';
 }
 footer {
   text-align: center;
