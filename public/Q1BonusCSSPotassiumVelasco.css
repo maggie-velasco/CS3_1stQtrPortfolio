@@ -2,9 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR3PKS9l4OSzC4nshtIzMmzCTaBBcTKsHSiQ&s');
+  background-size:100% 100%;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
 }
 header {
-  background-color: #4a90e2;
+  background-color: #E1B3F2;
   color: white;
   padding: 2em;
   text-align: center;
