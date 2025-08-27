@@ -8,13 +8,15 @@ body {
   background-repeat:no-repeat;
 }
 header {
-  background-color: E1B3F2;
+  background-color: blue;
   color: white;
   padding: 2em;
   text-align: center;
+  font-family: Cursive;
 }
 section {
   padding: 1.5em;
+  font-family: Courier;
 }
 footer {
   text-align: center;
