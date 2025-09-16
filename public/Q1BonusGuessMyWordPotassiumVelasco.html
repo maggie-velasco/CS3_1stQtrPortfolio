@@ -1,0 +1,42 @@
+<h1>GUESS THE WORD!!</h1>
+<p id="wordDisplay"></p>
+<input type="text" id="guessInput" maxlength="1">
+<button onclick="makeGuess()">Guess</button>
+<p id="message"></p>
+
+<script>
+  let secretWord = ["m", "o", "t", "i", "v", "a", "t", "e", "d"];
+  let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_"];
+
+  document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+
+  function makeGuess() {
+    let guess = document.getElementById("guessInput").value.toLowerCase();
+    let correct = false;
+
+    for (let i = 0; i < secretWord.length; i++) {
+      if (secretWord[i] === guess) {
+        guessedWord[i] = guess;
+        correct = true;
+      }
+    }
+
+    document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+    document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
+    document.getElementById("guessInput").value = "";
+  }
+</script>
+
+<style>
+  body {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/046/605/943/small_2x/sky-with-a-beautiful-sunset-a-blue-and-orange-sky-with-soft-clouds-a-sky-background-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    font-family:"Papyrus", Fantasy;
+    font-size:50px;
+    color: lightpink;
+    text-align: center;
+  }
+</style>
