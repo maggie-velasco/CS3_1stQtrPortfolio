@@ -4,7 +4,6 @@
 <button onclick="makeGuess()">Guess</button>
 <p id="message"></p>
 <p id = "attempts"></p>
-<h3>Attempts left: </h3>
 <script>
   let attempt = 20;
   let secretWord = ["m", "o", "t", "i", "v", "a", "t", "e", "d", "m","a", "g", "g", "i", "e"];
@@ -22,21 +21,13 @@
       
     }
     attempt--;
-    if(attempt == 0) {
-      
-    }
-    
-    
     document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
     document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
     document.getElementById("guessInput").value = "";
-    document.getElementById("attempts").innerText = attempt;
+    document.getElementById("attempts").innerText = "Attempts left: " + attempt;
+    
   }
-  
 </script>
-
-
-
 <style>
   body {
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/046/605/943/small_2x/sky-with-a-beautiful-sunset-a-blue-and-orange-sky-with-soft-clouds-a-sky-background-photo.jpg');
