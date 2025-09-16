@@ -1,0 +1,17 @@
+<h1>EVEN NUMBERS!!</h1>
+<ul id="numberList"></ul>
+
+<script>
+  let list = document.getElementById("numberList");
+  for (let i = 1; i <= 10; i++) {
+    if(i % 2 == 0) {
+      list.innerHTML += `<li>Number ${i}</li>`;
+    }
+  }
+</script>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
