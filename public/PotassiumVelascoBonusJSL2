@@ -10,4 +10,14 @@
   }
 </script>
 
-//Reflection: In this exercise, I learned how to put/apply arrays in html and what happens when I combine it with a for loop. 
+//Reflection: In this exercise, I learned how to put/apply arrays in html and what happens when I combine it with a for loop.
+<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlSwOL1jfLHWpCYRYA9qw2P875wpxPtPpig&s">
+
+<style>
+  img {
+    width:50%;
+    height:50%;
+  }
+</style>
+
+
