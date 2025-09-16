@@ -1,4 +1,4 @@
-<h1>GUESS THE WORD!!</h1>
+<h1>GUESS MY WORD!</h1>
 <p id="wordDisplay"></p>
 <input type="text" id="guessInput" maxlength="1">
 <button onclick="makeGuess()">Guess</button>
@@ -12,6 +12,11 @@
   function makeGuess() {
     let guess = document.getElementById("guessInput").value.toLowerCase();
     let correct = false;
+    if(attempt <= 0) {
+        document.getElementById("message").textContent = "You have reached the maximum number of attempts.";
+        document.getElementById("guessInput").disabled = true;
+        document.querySelector("guessInput").disabled = true;
+    }
     
     for (let i = 0; i < secretWord.length; i++) {
       if (secretWord[i] === guess) {
@@ -21,18 +26,22 @@
       
     }
     attempt--;
-    document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
-    document.getElementById("message").textContent = correct ? "🤓 CORRECT" : "🫣 TRY AGAIN";
-    document.getElementById("guessInput").value = "";
+      document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
+      document.getElementById("message").textContent = correct ? "🤓 CORRECT" : "🫣 TRY AGAIN";
+      document.getElementById("guessInput").value = "";
     document.getElementById("attempts").innerText = "Attempts left: " + attempt;
     
   }
 </script>
+<img src="https://wallpapers.com/images/featured/anya-forger-pictures-xltycnoeykot1q35.jpg" class= "image">
 <style>
   body {
     background-image: url('https://static.vecteezy.com/system/resources/thumbnails/046/605/943/small_2x/sky-with-a-beautiful-sunset-a-blue-and-orange-sky-with-soft-clouds-a-sky-background-photo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    color:purple;
+    font-size: 30px;
   }
   h1 {
     font-family:"Papyrus", Fantasy;
@@ -41,10 +50,15 @@
     text-align: center;
   }
   script {
-    color:lightblue;
-    font-size: 30px;
+   
+    
+  }
+  .image {
+    width:60%;
+    length:60%;
+    border-radius:40px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
-
-
-
