@@ -3,33 +3,34 @@
 <input type="text" id="guessInput" maxlength="1">
 <button onclick="makeGuess()">Guess</button>
 <p id="message"></p>
-<p id = "output"></p>
+<p id = "attempts"></p>
 <h3>Attempts left: </h3>
 <script>
+  let attempt = 20;
   let secretWord = ["m", "o", "t", "i", "v", "a", "t", "e", "d", "m","a", "g", "g", "i", "e"];
   let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
-  let counter = 20;
-
   document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
-
   function makeGuess() {
     let guess = document.getElementById("guessInput").value.toLowerCase();
     let correct = false;
-
+    
     for (let i = 0; i < secretWord.length; i++) {
       if (secretWord[i] === guess) {
         guessedWord[i] = guess;
         correct = true;
       }
+      
     }
-    counter--;
+    attempt--;
+    if(attempt == 0) {
+      
+    }
+    
+    
     document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
     document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
     document.getElementById("guessInput").value = "";
-    document.getElementById("output").value = counter;
-  }
-  if(counter > 20) {
-    break;
+    document.getElementById("attempts").innerText = attempt;
   }
   
 </script>
