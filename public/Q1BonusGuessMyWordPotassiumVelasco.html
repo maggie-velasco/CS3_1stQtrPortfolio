@@ -5,8 +5,9 @@
 <p id="message"></p>
 
 <script>
-  let secretWord = ["m", "o", "t", "i", "v", "a", "t", "e", "d"];
-  let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_"];
+  let secretWord = ["m", "o", "t", "i", "v", "a", "t", "e", "d", "m","a", "g", "g", "i", "e"];
+  let guessedWord = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
+  let counter = 1;
 
   document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
 
@@ -19,12 +20,14 @@
         guessedWord[i] = guess;
         correct = true;
       }
+      counter--;
     }
-
     document.getElementById("wordDisplay").textContent = guessedWord.join(" ");
     document.getElementById("message").textContent = correct ? "✅ Correct!" : "❌ Try again.";
     document.getElementById("guessInput").value = "";
+    document.getElementById("counter").value = 
   }
+  
 </script>
 
 <style>
