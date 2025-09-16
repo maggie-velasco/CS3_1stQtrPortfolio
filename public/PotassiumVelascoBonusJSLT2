@@ -9,3 +9,5 @@
     list.innerHTML += `<li>${animals[i]}</li>`;
   }
 </script>
+
+//Reflection: In this exercise, I learned how to put/apply arrays in html and what happens when I combine it with a for loop. 
