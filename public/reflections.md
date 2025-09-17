@@ -1,7 +1,7 @@
 # REFLECTIONS!!
 ### by K28 of 9-Potassium :)
 > *List and describe at least 5 topics that we discussed in class that you know very well. Each description should be at least 1 paragraph with two to five sentences.
-- [x] **Conditional statements**: 
+- [x] **Conditional statements**: an example is the if-else statements. 
 - [x] **While loops**:
 - [x] **Do-while loops**:
 - [x] **For loops**:
