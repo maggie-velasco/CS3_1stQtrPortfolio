@@ -14,7 +14,7 @@
 
 > Describe on what will be your plan of action in order to help yourself in understanding further the topics listed on the second items.
 
-
+Since I have trouble understanding some of the items above, I sometimes find myself struggling in writing programs. In order to improve, I’ll try to practice more. I plan to practice codes and find some problems in the internet, like AI. Trying, experimenting on them, and learning from my mistakes will help me enhance and strengthen some coding skills. 
 
 > In the activities that were done in class, list at least two that you think were effective and at least two that you think not effective in helping you understand topics in our course and why?
 
