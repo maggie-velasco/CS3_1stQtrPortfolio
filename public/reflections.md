@@ -10,7 +10,9 @@
 > List at least 5 topics that you know and can describe but need further practice/discussion and why. The why should be per topic listed.  
 - *Arrays* can store multiple values under one place, with the same datatype. These values are saved under what you call their index number. They can usually be accessed, changed, added, or removed by using for loops. I was able to understand how they work, but I still need help in using/applying them when writing codes. 
 - *Functions* are used when you want to use a certain piece of code over and over again, and helps to not waste your time writing them. These usually have parameters which are variables that are inputted in the function itself. I sometimes find them difficult to use because I get confused on how to call them and what parameters I should use.
-- *
+- *JS I/O statements* are used to connect external systems and the program. Some examples of these statements include alert(), documentGetElementById(), or console.log(). Some of them reads HTML elements, while some just outputs a certain statement. I need further practice or discussion for this because it is a bit tricky to know when to use them in specific scenarios.
+- *for...in loops* are used to enumerate all the properties of an object. It has a syntax of for(variable in object) {}, where object is the property you want to iterate. I find this hard to understand becuase it was not discssed in detail that much and I did not have any practice with it.
+- *Event handlers* execute specific codes in response to certain events. These functions are associated with the user’s actions and respond to them. I find this a bit tricky to understand, so I need continuous practice in order to familiarize and master this.
 
 > Describe on what will be your plan of action in order to help yourself in understanding further the topics listed on the second items.
 
@@ -18,5 +20,5 @@ Since I have trouble understanding some of the items above, I sometimes find mys
 
 > In the activities that were done in class, list at least two that you think were effective and at least two that you think not effective in helping you understand topics in our course and why?
 
-
+In class, I think that the class exercises and bonus are greatly effective. class exercises are important to master coding and to practice some parts we don’t understand. We can also consult our teacher whenever we want to when we have questions/concerns. Moreover, bonuses can help our grades, and at the same time, help us learn from our mistakes. On the other hand, I don’t think there are non-effective activities we did in class.
 
