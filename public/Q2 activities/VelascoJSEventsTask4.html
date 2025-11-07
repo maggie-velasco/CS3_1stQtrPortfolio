@@ -1,0 +1,87 @@
+<body>
+    <h1>Task 4-Build Your Own Event Responder</h1>
+    <h2 id = "textButton">Click this button to change text :)</h2>
+    <div id = "box">HOVER OVER ME!! :3</div>
+    <div id = "addText">Click a key to see a message!</div>
+    <script>
+        document.getElementById("textButton").onclick = changeText;
+        const box = document.getElementById("box");
+        box.onmouseover = rotateHEH;
+        document.body.onkeypress = newText;
+
+        function changeText() {
+            document.getElementById("textButton").innerText = "Yayy!! This is so cool!!";
+        }
+        function rotateHEH() {
+            box.style.transform = "rotate(50deg)";
+            box.style.transition = "transform 1s ease";
+        }
+        box.onmouseout = resetBox;
+        function resetBox() {
+            box.style.transform = "rotate(0deg)";
+        }
+        function newText(event){
+            document.getElementById("addText").innerText = "'Do more of what makes you happy.' :)";
+        }
+        document.addEventListener("keydown", outputKey);
+
+    </script>
+    <footer>
+        &copy; 2025 Maggie Velasco  All Rights Reserved.
+    </footer>
+
+</body>
+<style>
+    body {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align:center;
+        background-image: url('https://wallpapers.com/images/hd/girl-aesthetic-desktop-1jztwi3fnftq68c4.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    h1 {
+        font-size:50px;
+        font-family: "Copperplate", fantasy;
+        color:rgb(77, 34, 120);
+    }
+    h2 {
+        text-align:center;
+        margin-left:5px;
+        float:left;
+        margin-top:50px;
+        width:200px;
+        height:50px;
+        background-color:rgb(219, 146, 241);
+        padding:10px;
+        border-radius:15px;
+        font-size:20px;
+    }
+    #box {
+        width:250px;
+        height:250px;
+        background-color:rgb(204, 107, 186);
+        margin-right:50px;
+        float:right;
+        margin-top:100px;
+        padding:5px;
+        text-align:center;
+    }
+    #addText {
+        margin-top:120px;
+        font-size:30px;
+        text-align:center;
+        justify-content:center;
+        margin-top:45px;
+        background-color:rgb(233, 171, 224);
+        font-family:"Monaco", monospace;
+        opacity:0.8;
+    }
+    footer{
+        clear:both;
+        padding:10px;
+        background-color:rgb(171, 180, 236);
+        bottom:0;
+        position:absolute;
+        width:100%;
+    }
