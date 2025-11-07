@@ -1,0 +1,45 @@
+<body>
+  <h1>Click anywhere!</h1>
+  <h2>Press any key</h2>
+  Refresh page to reset
+  <p id = "outputHEH"></p>
+  <div id="box" style="width:100px; height:100px; background:red;"></div>
+  <script>
+    const box = document.getElementById("box");
+    box.onmouseover = changeColorScale;
+    document.body.onclick = changeColor;
+    document.body.onkeypress = changeColorPress;
+
+    function changeColorScale() {
+      box.style.backgroundColor = "royalblue";
+      box.style.transform = "scale(1.2)";
+      box.style.transition = "transform 0.5s ease";
+    }
+  
+    box.onmouseout = resetBox;
+
+    function resetBox() {
+      box.style.backgroundColor = "red";
+      box.style.transform = "scale(1)";
+      box.style.transition = "transform 0.5s ease";
+    } 
+
+    function changeColor() {
+      let r = Math.floor(Math.random() * 256);
+      let g = Math.floor(Math.random() * 256);
+      let b = Math.floor(Math.random() * 256);
+      let c = Math.floor(Math.random()*3).toString
+      document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+    }
+
+    function changeColorPress(){
+        document.body.style.backgroundColor = "pink";
+    }
+
+    function outputKey(event){
+      let k = event.key;
+      document.getElementById("outputHEH").innerText = "key you outputted: " + k;
+    }
+    document.addEventListener("keydown", outputKey);
+  </script>
+</body>
